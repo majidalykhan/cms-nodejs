@@ -1,0 +1,149 @@
+<div class="container-fluid">
+
+<div class="row back" style="background-color: #436970;">
+   
+	<div class="col-lg-6 logo">
+	   <a href="index.html"> <img src="images/logo.png"></a>
+	</div>
+    
+    <div class="col-lg-6">
+        <!--
+        <div class="d-inline-flex p-2 bd-highlight lrp"><a class="btn btn-primary login" href="signin.php" role="button">Login</a><a class="btn btn-primary register" href="signup.php" role="button">Register</a>
+        </div>
+        -->
+        
+	   </div>
+ 
+        </div>
+    </div>
+</div>
+
+ <!-- Container Ending div -->
+
+ <div class="container-fluid menucolor">
+     <div class="nav1 col-lg-12">
+  
+        <nav class="navbar navbar-expand-lg navbar-light bg-light menucolor">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+        <div class="collapse navbar-collapse menucolor" id="navbarSupportedContent">
+    <ul class="navbar-nav m-auto">
+        <li class="nav-item active">
+              <a class="nav-link" href="/">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/admin">Admin</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/login">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/register">Register</a>
+            </li>
+    </ul>
+            </div>
+        </nav>
+</div>
+  
+</div> <!-- Container Ending div -->
+
+
+
+
+{{#each posts}}
+
+          <!-- Blog Post -->
+          <div class="card col-md-4">
+            <img class="card-img-top" src="/uploads/{{file}}" height="300" alt="Card image cap">
+            <div class="card-body">
+              <h2 class="card-title">{{title}}</h2>
+              <p class="card-text">{{body}}</p>
+            </div>
+            <div class="card-footer text-muted">
+              Posted on {{generateDate date 'MMMM Do YYYY'}}
+              <a href="#">Node.js Project</a>
+            </div>
+          </div>
+
+        {{/each}}
+
+
+<div class="container-fluid" style="padding:0;">
+     
+    <footer >
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                        <div class="accordion d-lg-flex" id="accordion">
+                            <div class="col-lg-4 col-md-12"> <!-- Accordion Menu 1 -->
+                                <a href="#one" class="h4 text-white nav-link p-0 d-block d-lg-none d-xl-none" data-toggle="collapse">
+                                    <span class="foottext">Useful Links</span>
+                                </a>
+                                    <div class="text-white h4 d-none d-lg-block d-xl-block">
+                                        <span class="foottext">Useful Links</span>
+                                    </div>
+                                <div class="collapse text-white d-lg-flex" id="one" data-parent="#accordion">
+                                    <ul class="menufoot">
+                                        <li class="usefullinks"><a href="index.html" >Home</a></li>
+                                        <li class="usefullinks"><a href="#" >Movies</a></li>
+                                        <li class="usefullinks"><a href="#" >Dramas</a></li>
+                                        <li class="usefullinks"><a href="#" >Showtimes</a></li>
+                                        <li class="usefullinks"><a href="#" >Contact</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <div class="foottext col-lg-4 col-md-12" style="margin-right: 100px"> <!-- Accordion Menu 2 -->
+                                <a href="#two" class="h4 foottext nav-link p-0 d-block d-lg-none d-xl-none" data-toggle="collapse">
+                                    Pak<span class="mdcolor">MD</span>
+                                </a>
+                                    <div class=" h4 d-none d-lg-block d-xl-block">
+                                        Pak<span class="mdcolor">MD</span>
+                                    </div>
+                                <div class="collapse text-white d-lg-flex paccordion2" id="two" data-parent="#accordion">
+                                    The website is informational for Pakistani people. It is an online database of information related to Movies and Dramas of Pakistan which will include Cast, Fan Reviews and Ratings. People will be able to View Information, Trailers and Clips of Old, New, Popular and Upcoming movies and dramas.
+
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-4 col-md-12"> <!-- Accordion Menu 3 -->
+                                <a href="#three" class="h4 text-white nav-link p-0 d-block d-lg-none d-xl-none" data-toggle="collapse">
+                                    <span class="foottext">Join Us</span>
+                                </a>
+                                    <div class="text-white h4 d-none d-lg-block d-xl-block">
+                                        <span class="foottext">Join Us</span>
+                                    </div>
+                                <div class="collapse text-white d-lg-flex" id="three" data-parent="#accordion">
+                                    <ul class="list-unstyled d-flex w-100 justify-content">
+                                        <li><a href="#" class="icon">Facebook</a></li>
+                                        <li><a href="#" class="icon">Twitter</a></li>
+                                        <li><a href="#" class="icon">Instagram</a></li>
+                                        <li><a href="#" class="icon">Youtube</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>  
+                </div> 
+            </div>
+       </div>
+    </footer>
+    
+    <!-- Ending Footer -->
+    
+    <div class="container-fluid"> <!-- Copyright -->
+        <div class="row copyrightcolor">
+            <div class="col-md-12">
+                <div class="d-flex justify-content-center align-items-center">
+                    <span class="p-3 text-white">&copy; Copyright 2019</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> <!-- Container Ending div -->
